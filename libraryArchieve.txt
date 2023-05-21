@@ -1,0 +1,20 @@
+import matplotlib.pylab as plt
+%matplotlib inline
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+plt.rc('font', family='NanumBarunGothic') 
+import seaborn as sns
+
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn import preprocessing
+
+from scipy import stats
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+
+# plt 한국어 깨짐 방지
+!sudo apt-get install -y fonts-nanum
+!sudo fc-cache -fv
+!rm ~/.cache/matplotlib -rf
